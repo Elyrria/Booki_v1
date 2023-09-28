@@ -38,20 +38,27 @@
 
         <!-- Partie recherche -->
         <div class="search-part">
-
           <i class="fa-solid fa-location-dot"></i>
-          <input type="text" id="search-text" name="search-text" placeholder="Marseille, France" />
-          <input type="button" value="Rechercher" id="cta-search">
-          <!-- Comment construire ma barre de recherche -->
-          <!-- Rajouter l'icone "loupe" dans le btn "rechercher" puis lui attribuer la propriété dispay: none; -->
+          <input type="text" id="search-text" name="search-text" placeholder="Marseille, France" autof />
+          <button type="button" id="cta-search"><i class="fa-solid fa-magnifying-glass"></i>Rechercher</button>
+          <!-- L'icone "loupe" dans le btn "rechercher" est desactivée -->
         </div>
         <!-- Filtres -->
         <div class="filters-part">
           <div>Filtres</div>
-          <div class="filters-btn">Économique</div>
-          <div class="filters-btn">Familial</div>
-          <div class="filters-btn">Romantique</div>
-          <div class="filters-btn">Nos pépites</div>
+          <!-- Test pour la réalisation du bouton -->
+          <!-- <div class="filters-btn">
+            <i class="fa-solid fa-money-bill-wave"></i>
+            <button id="economic-btn"></i>Économique</button>
+          </div> -->
+          <button class="filters-btn" id="family-btn">
+            <i class="fa-solid fa-money-bill-wave"></i>Économique</button>
+            <button class="filters-btn" id="family-btn">
+              <i class="fa-solid fa-person"></i>Familial</button>
+            <button class="filters-btn" id="romantic-btn">
+              <i class="fa-solid fa-heart"></i>Romantique</button>
+            <button class="filters-btn" id="nuggets-btn">
+              <i class="fa-solid fa-fire"></i>Nos pépites</button>
         </div>
         <div class="info-part">
           <i class="fa-solid fa-info"></i>
