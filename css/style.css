@@ -23,6 +23,7 @@
        max-width: 1440px;
        box-sizing: border-box;
        padding: 0px 50px;
+       margin: auto;
    }
 
    a {
@@ -63,6 +64,9 @@
        /* Pour la coller au bord haut même padding que le header -2px */
        border-top: 2px solid var(--main-color);
        color: var(--main-color);
+
+       /* border-bottom: 2px solid var(--main-color);
+       padding-bottom: 15px; */
    }
 
    /*  Part search-en-filters */
