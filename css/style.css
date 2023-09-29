@@ -21,14 +21,11 @@
 
    }
 
-   main {
-       padding: 0px 50px;
-   }
-
    .main-container {
        width: 100%;
        max-width: 1440px;
        box-sizing: border-box;
+       padding: 0px 50px;
    }
 
    a {
@@ -41,7 +38,6 @@
    header {
        display: flex;
        justify-content: space-between;
-       padding: 0 50px;
    }
 
    #logo img {
