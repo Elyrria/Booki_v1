@@ -17,12 +17,14 @@
 <body>
   <div class="main-container">
     <header>
+      <!-- Div logo -->
       <div id="logo">
         <img src="images/logo/Booki.png" alt="Logo Booki" />
       </div>
+      <!-- Nav avec deux liens avec ancre -->
       <nav class="menu">
         <ul>
-          <li><a href="#hebergements-a-marseille">Hébérgements</a></li>
+          <li><a href="#hebergements-a-marseille">Hébergements</a></li>
           <li><a href="#activites-a-marseille">Activités</a></li>
         </ul>
       </nav>
@@ -53,12 +55,12 @@
           </div> -->
           <button class="filters-btn" id="family-btn">
             <i class="fa-solid fa-money-bill-wave"></i>Économique</button>
-            <button class="filters-btn" id="family-btn">
-              <i class="fa-solid fa-person"></i>Familial</button>
-            <button class="filters-btn" id="romantic-btn">
-              <i class="fa-solid fa-heart"></i>Romantique</button>
-            <button class="filters-btn" id="nuggets-btn">
-              <i class="fa-solid fa-fire"></i>Nos pépites</button>
+          <button class="filters-btn" id="family-btn">
+            <i class="fa-solid fa-person"></i>Familial</button>
+          <button class="filters-btn" id="romantic-btn">
+            <i class="fa-solid fa-heart"></i>Romantique</button>
+          <button class="filters-btn" id="nuggets-btn">
+            <i class="fa-solid fa-fire"></i>Nos pépites</button>
         </div>
         <div class="info-part">
           <i class="fa-solid fa-info"></i>
@@ -70,9 +72,10 @@
         <!-- class="card-txt" n'a aucun interet pour le moment, à définir plus tard sont utilité pour du CSS ou à supprimer si pas utilisée -->
         <!-- Hébérgement -->
         <section class="hebergements">
-          <h2 class="section-title" id="hebergements-a-marseille">Hébérgements à Marseille</h2>
+          <h2 class="section-title" id="hebergements-a-marseille">Hébergements à Marseille</h2>
+          <!-- Block 1 -->
           <div class="hebergements-cards">
-            <!--  Block 1 -->
+            <!--  Card 1 -->
             <a href="">
               <article class="card">
                 <img src="images/hebergements/fred-kleber.jpg"
@@ -94,6 +97,7 @@
                 </div>
               </article>
             </a>
+            <!-- Card 2 -->
             <a href="">
               <article class="card">
                 <img src="images/hebergements/febrian-zakaria.jpg"
@@ -114,6 +118,7 @@
                 </div>
               </article>
             </a>
+            <!-- Card 3 -->
             <a href="">
               <article class="card">
                 <img src="images/hebergements/reisetopia.jpg"
@@ -137,6 +142,7 @@
           </div>
           <!-- Block 2 -->
           <div class="hebergements-cards">
+            <!-- Card 1 -->
             <a href="">
               <article class="card">
                 <img src="images/hebergements/annie-spratt.jpg"
@@ -157,6 +163,7 @@
                 </div>
               </article>
             </a>
+            <!-- Card 2 -->
             <a href="">
               <article class="card">
                 <img src="images/hebergements/marcus-loke.jpg"
@@ -177,6 +184,7 @@
                 </div>
               </article>
             </a>
+            <!-- Card 3 -->
             <a href="">
               <article class="card">
                 <img src="images/hebergements/nicate-lee.jpg"
@@ -208,8 +216,9 @@
             <h2 class="section-title">Les plus populaires</h2>
             <i class="fa-solid fa-chart-line" aria-hidden="true"></i>
           </div>
-
+          <!-- Block 1 -->
           <div class="populaires-cards">
+            <!-- Card 1 -->
             <a href="#">
               <article class="card">
                 <img src="./images/hebergements/emile-guillemot.jpg"
@@ -232,6 +241,7 @@
                 </div>
               </article>
             </a>
+            <!-- Card 2 -->
             <a href="#">
               <article class="card">
                 <img src="./images/hebergements/aw-creative.jpg"
@@ -256,6 +266,7 @@
                 </div>
               </article>
             </a>
+            <!-- Card 3 -->
             <a href="#">
               <article class="card">
                 <img src="./images/hebergements/febrian-zakaria2.jpg"
@@ -282,38 +293,71 @@
         </section>
       </div>
       <!-- Activités à Marseille -->
-      <div class="activites">
+      <div class="activities">
         <h2 id="activites-a-marseille">Activités à Marseille</h2>
+        <!-- Block 1 -->
         <div class="activities-cards">
+          <!-- Card 1 -->
           <a href="">
+            <!-- Peut-être rajouter une class spécifique pour chaque cards de parties difféentes pour les dimensionner ex: class="card card-activities" -->
             <article class="card">
               <img src="images/activites/reno-laithienne.jpg" alt="Photo du Vieux-Port de Marseille">
               <h3 class="card-title">Vieux-Port</h3>
             </article>
           </a>
+          <!-- Card 2 -->
           <a href="">
             <article class="card">
               <img src="images/activites/paul-hermann.jpg" alt="Photo du Fort de Pomègues">
               <h3 class="card-title">Fort de Pomègues</h3>
             </article>
           </a>
+          <!-- Card 3 -->
           <a href="">
             <article class="card">
               <img src="images/activites/kilyan-sockalingum.jpg" alt="Photo du Parc national des Calanques">
               <h3 class="card-title">Parc National des Calanques</h3>
             </article>
           </a>
+          <!-- Card 4 -->
           <a href="">
             <article class="card">
               <img src="images/activites/florian-wehde.jpg" alt="Photo de Notre Dame de la Garde">
-              <h3 class="card-title">Notre Dame de la Garde</h3>
+              <h3 class="card-title">Notre-Dame-de-la-Garde</h3>
             </article>
           </a>
         </div>
       </div>
-
     </main>
-    <footer></footer>
+    <footer>
+      <!-- Block 1 -->
+      <div class="footer-container">
+        <h2>À Propos</h2>
+        <ul>
+          <li><a href="">Fonctionnement du site</a></li>
+          <li><a href="">Conditions générales</a></li>
+          <li><a href="">Données et confidentialité</a></li>
+        </ul>
+      </div>
+      <!-- Block 2 -->
+      <div class="footer-container">
+        <h2>Nos hébérgements</h2>
+        <ul>
+          <li><a href="">Charte qualité</a></li>
+          <li><a href="">Proposer votre hôtel</a></li>
+        </ul>
+      </div>
+      <!-- Block 3 -->
+      <div class="footer-container">
+        <h2>Assistance</h2>
+        <ul>
+          <li><a href="">Centre d'aide</a></li>
+          <li><a href="">Nous contacter</a></li>
+
+        </ul>
+      </div>
+    </footer>
+    <!-- Fermeture .main-container -->
   </div>
 </body>
 
