@@ -15,7 +15,7 @@
 
    body {
        margin: 0;
-       padding: 0; 
+       padding: 0;
    }
 
    .main-container {
@@ -86,12 +86,69 @@
 
    .title-part h1 {
        margin: 0;
+       font-size: 1.4em;
+   }
+
+   .title-part i {
+       font-style: normal;
+       font-size: 1em;
    }
 
    .filters-part {
        display: flex;
        gap: 15px;
    }
+
+   /* Button search */
+
+   .search-part {
+       display: flex;
+       align-items: center;
+   }
+
+   .search-part .search-icon {
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       width: 50px;
+       height: 49px;
+       background-color: var(--main-bg-color);
+       border-radius: 15px 0 0 15px;
+   }
+
+   .search-icon .fa-location-dot {
+    color: black;
+   }
+
+   .search-part input {
+       width: 195px;
+       height: 45px;
+       border-top: 1px solid var(--main-bg-color);
+       border-bottom: 1px solid var(--main-bg-color);
+       border-left: none;
+       border-right: none;
+       outline: none;
+       text-align: center;
+   }
+
+   .search-part ::placeholder {
+       color: black;
+       font-weight: bold;
+   }
+
+   .search-part button {
+       width: 123px;
+       height: 49px;
+       background-color: var(--main-color);
+       border: none;
+       border-radius: 0 15px 15px 0;
+       color: white;
+       font-weight: bold;
+   }
+
+
+
+
 
    /* .filters-part button{
     background-color: white;
@@ -104,11 +161,6 @@
    /*  Permet de désactiver la balise <i> qui permet d'afficher la loupe*/
    .fa-magnifying-glass {
        display: none;
-   }
-
-   .section-title {
-       margin: 0;
-       font-size: 22px;
    }
 
    /*********** Part global cards config ************/
@@ -148,6 +200,11 @@
        border-radius: 20px;
        padding: 30px;
        box-sizing: border-box;
+   }
+
+   .section-title {
+       margin: 0;
+       font-size: 22px;
    }
 
    /****** Part Hebergements ***********/
@@ -219,8 +276,8 @@
 
    /* Part Marseille Activities */
 
-   .activities{
-    padding: 30px ;
+   .activities {
+       padding: 30px;
    }
 
    .activities-cards {
@@ -262,6 +319,7 @@
    .footer-container h2 {
        margin: 0;
    }
+
    /* Le code ci-dessous correspond à la version responsive uniquement */
 
    /****** Media queries ***********/
