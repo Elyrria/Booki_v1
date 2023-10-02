@@ -7,6 +7,7 @@
        --main-color: #0065FC;
        --main-bg-color: #F2F2F2;
        --filter-bg-color: #DEEBFF;
+       --button-bd-color: #D9D9D9;
    }
 
    .fa-solid {
@@ -33,6 +34,11 @@
 
    ul {
        list-style: none;
+   }
+
+   i {
+       font-style: normal;
+       font-size: 1em;
    }
 
    /* Part header */
@@ -89,10 +95,6 @@
        font-size: 1.4em;
    }
 
-   .title-part i {
-       font-style: normal;
-       font-size: 1em;
-   }
 
    /* Button search */
 
@@ -161,6 +163,11 @@
        cursor: pointer;
    }
 
+   /*  Permet de désactiver la balise <i> qui permet d'afficher la loupe*/
+   .fa-magnifying-glass {
+       display: none;
+   }
+
    #cta-search:hover {
 
        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -172,21 +179,51 @@
 
    /*  Part filters */
 
-   .filters-part button {
-       background-color: white;
-       border: 2px solid #D9D9D9;
-       border-radius: 25px;
-       padding: 19px 4px;
-   }
-
    .filters-part {
        display: flex;
        gap: 15px;
    }
 
-   /*  Permet de désactiver la balise <i> qui permet d'afficher la loupe*/
-   .fa-magnifying-glass {
-       display: none;
+   .filters-title {
+       display: flex;
+       align-items: center;
+       margin: 0;
+   }
+
+   .filters-btn {
+       display: flex;
+       align-items: center;
+       gap: 10px;
+       font-weight: bold;
+       background-color: white;
+       border: 2px solid var(--button-bd-color);
+       border-radius: 25px;
+       padding: 10px 19px;
+   }
+
+   .filters-btn:hover {
+       background-color: var(--filter-bg-color);
+   }
+
+   /* Part icon + info */
+
+   .info-part {
+       display: flex;
+       flex-wrap: nowrap;
+       gap: 10px;
+   }
+
+   .info-part .fa-info {
+
+       border: 2px solid var(--button-bd-color);
+       border-radius: 50%;
+       padding: 4px 8px;
+       font-size: 0.8em;
+   }
+
+   .legend-info {
+       display: flex;
+       align-items: center;
    }
 
    /*********** Part global cards config ************/
