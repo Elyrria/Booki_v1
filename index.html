@@ -38,17 +38,14 @@
         </div>
 
         <!-- Partie recherche -->
-        <div class="search-part">
-          <div class="search-icon">
-            <!-- Peut-être rajouter un input ou une balise button car c'est un bouton de géolocalisation, le rendre cliquable-->
-            <i class="fa-solid fa-location-dot"></i>
-          </div>
-          <form action="" method="">
-            <input type="text" id="search-text" name="search-text" placeholder="Marseille, France" autofocus />
-            <button type="button" id="cta-search"><i class="fa-solid fa-magnifying-glass"></i>Rechercher</button>
-          </form>
-          <!-- L'icone "loupe" dans le btn "rechercher" est desactivée -->
-        </div>
+        <form class="search-part" action="" method="">
+          <button id="cta-search-icon"><i class="fa-solid fa-location-dot"></i></button>
+          <input type="text" id="search-text" name="search-text" placeholder="Marseille, France" autofocus />
+          <button type="button" id="cta-search">
+            <i class="fa-solid fa-magnifying-glass"></i>Rechercher
+          </button>
+        </form>
+        <!-- L'icone "loupe" dans le btn "rechercher" est desactivée -->
         <!-- Filtres -->
         <div class="filters-part">
           <div>Filtres</div>
