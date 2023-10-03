@@ -1,6 +1,8 @@
    /*  Global config */
    * {
        font-family: 'Raleway', sans-serif;
+       margin: 0;
+       padding: 0;
    }
 
    :root {
@@ -12,11 +14,6 @@
 
    .fa-solid {
        color: var(--main-color);
-   }
-
-   body {
-       margin: 0;
-       padding: 0;
    }
 
    .main-container {
@@ -42,7 +39,6 @@
    }
 
    /* Part header */
-
    header {
        display: flex;
        justify-content: space-between;
@@ -56,7 +52,6 @@
    nav ul {
        display: flex;
        padding: 15px 0;
-       margin: 0;
        justify-content: space-between;
        gap: 68px;
    }
@@ -76,7 +71,6 @@
    }
 
    /*  Part search-en-filters */
-
    .search-and-filters {
        display: flex;
        flex-direction: column;
@@ -91,13 +85,10 @@
    }
 
    .title-part h1 {
-       margin: 0;
        font-size: 1.4em;
    }
 
-
    /* Button search */
-
    .search-part {
 
        display: flex;
@@ -141,6 +132,7 @@
    .search-part ::placeholder {
        color: black;
        font-weight: bold;
+       /* Sur la version Mozzila le text n'est pas en noir */
    }
 
    #search-text {
@@ -169,7 +161,6 @@
    }
 
    #cta-search:hover {
-
        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
    }
 
@@ -178,7 +169,6 @@
    }
 
    /*  Part filters */
-
    .filters-part {
        display: flex;
        gap: 15px;
@@ -187,7 +177,6 @@
    .filters-title {
        display: flex;
        align-items: center;
-       margin: 0;
    }
 
    .filters-btn {
@@ -206,7 +195,6 @@
    }
 
    /* Part icon + info */
-
    .info-part {
        display: flex;
        flex-wrap: nowrap;
@@ -227,7 +215,6 @@
    }
 
    /*********** Part global cards config ************/
-
    .card {
        background-color: white;
        border-radius: 20px;
@@ -240,6 +227,7 @@
    }
 
    .card-title {
+       margin-top: 10px;
        font-size: 16px;
    }
 
@@ -255,7 +243,7 @@
    .hebergements-and-populaires {
        display: flex;
        justify-content: space-between;
-       margin-top: 35px;
+       margin: 35px 0 35px 0;
    }
 
    .hebergements-and-populaires section {
@@ -266,7 +254,6 @@
    }
 
    .section-title {
-       margin: 0;
        font-size: 22px;
    }
 
@@ -291,34 +278,32 @@
    .hebergements-cards .card {
        display: flex;
        flex-direction: column;
-
    }
 
    .hebergements-cards img {
 
-       height: 120px;
+       height: 110px;
        border-top-left-radius: 20px;
        border-top-right-radius: 20px;
    }
 
    .hebergements-cards .card-content {
-       margin: 0 15px 0px 15px;
+       margin: 0 15px;
    }
 
    .hebergements-cards .card-title {
-       margin: 4px 0 8px 0;
+       margin-bottom: 8px;
    }
 
    .hebergements-cards .card-subtitle {
-       margin: 0 0 8px 0;
+       margin-bottom: 8px;
    }
 
    .hebergements-cards .card-rating {
-       margin: 0 0 15px 0;
+       margin-bottom: 8px;
    }
 
    /*  Show more */
-
    .show-more {
        font-weight: bold;
    }
@@ -359,12 +344,7 @@
    }
 
    .populaires-cards .card-title {
-       margin-top: 10px;
        margin-bottom: 4px;
-   }
-
-   .populaires-cards .card-subtitle {
-       margin: 0;
    }
 
    .populaires-cards .card-rating {
@@ -372,9 +352,9 @@
    }
 
    /* Part Marseille Activities */
-
    .activities {
        padding: 30px;
+       margin-bottom: 35px;
    }
 
    .activities a {
@@ -391,7 +371,6 @@
        padding: 0;
    }
 
-
    .activities-cards img {
        width: 100%;
        height: 380px;
@@ -405,7 +384,6 @@
    }
 
    /* Part footer */
-
    footer {
        display: flex;
        justify-content: space-between;
@@ -419,18 +397,14 @@
        padding: 20px;
    }
 
-   .footer-container h2 {
-       margin: 0 0 15px 0;
-   }
-
-   .footer-container ul {
-       padding: 0;
-       margin: 0;
+   .activities h2 {
+       font-size: 1.1em;
+       margin-bottom: 30px;
    }
 
    .footer-container li {
        margin-top: 15px;
-       font-size: 1.2em;
+       font-size: 1.1em;
    }
 
    /* Le code ci-dessous correspond à la version responsive uniquement */
