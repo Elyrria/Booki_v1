@@ -9,7 +9,7 @@
        --main-color: #0065FC;
        --main-bg-color: #F2F2F2;
        --filter-bg-color: #DEEBFF;
-       --button-bd-color: #D9D9D9;
+       --button-bdr-color: #D9D9D9;
    }
 
    .fa-solid {
@@ -89,7 +89,6 @@
    }
 
    /* Button search */
-
    .search-part {
 
        display: flex;
@@ -102,11 +101,16 @@
        align-items: center;
        padding: 0 16px;
        height: 50px;
-       /* Le bouton avec l'icon ne colle pas avec l'input    (fixé avec une height */
+       /* Le bouton avec l'icon ne colle pas avec l'input (fixé avec une height */
        border-radius: 15px 0 0 15px;
        border: 1px solid var(--main-bg-color);
        background-color: var(--main-bg-color);
        cursor: pointer;
+   }
+
+   #cta-search-icon:focus {
+       outline: none;
+       border: 2px solid rgb(40, 93, 197);
    }
 
    #cta-search-icon:hover {
@@ -116,6 +120,8 @@
    #cta-search-icon:active {
        opacity: 0.7;
        box-shadow: none;
+       border: 1px solid var(--main-bg-color);
+
    }
 
    #cta-search-icon .fa-location-dot {
@@ -136,7 +142,9 @@
    .search-part ::placeholder {
        color: black;
        font-weight: bold;
-       /* Sur la version Mozzila le text n'est pas en noir */
+
+       /* fixe placeholder opacity for Mozzila */
+       opacity: 1;
    }
 
    #search-text {
@@ -145,6 +153,8 @@
    }
 
    #search-text:focus::placeholder {
+
+       /* fix persistent placeholder after focus on Chrome */
        color: transparent;
    }
 
@@ -160,24 +170,28 @@
        cursor: pointer;
    }
 
-   /*  Permet de désactiver la balise <i> qui permet d'afficher la loupe*/
    .fa-magnifying-glass {
+
+       /* disable icon for version desktop version */
        display: none;
    }
 
-   /* #cta-search:focus {
-       border: 1px dotted var(--main-color);
-       border-radius: none;
-   } */
-   /* Ne marche pas... Trouver une solution */
 
    #cta-search:hover {
        box-shadow: rgba(0, 0, 0, 0.35) 8px 5px 15px;
    }
 
+   #cta-search:focus {
+       outline: none;
+       /* Définir quelle couleur et la plus adaptée en terme d'accésibilité */
+       /* border: 2px solid rgb(40, 93, 197); */
+       border: 2px solid var(--button-bdr-color);
+   }
+
    #cta-search:active {
        opacity: 0.8;
        box-shadow: none;
+       border: 1px solid var(--main-color);
    }
 
    /*  Part filters */
@@ -197,13 +211,18 @@
        gap: 10px;
        font-weight: bold;
        background-color: white;
-       border: 2px solid var(--button-bd-color);
+       border: 2px solid var(--button-bdr-color);
        border-radius: 25px;
        padding: 10px 19px;
    }
 
    .filters-btn:hover {
        background-color: var(--filter-bg-color);
+   }
+
+   .filters-btn:active {
+       opacity: 0.7;
+       box-shadow: none;
    }
 
    /* Part icon + info */
@@ -215,7 +234,7 @@
 
    .info-part .fa-info {
 
-       border: 2px solid var(--button-bd-color);
+       border: 2px solid var(--button-bdr-color);
        border-radius: 50%;
        padding: 4px 8px;
        font-size: 0.8em;
