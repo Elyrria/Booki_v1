@@ -46,15 +46,19 @@
         </form>
         <!-- Filtres -->
         <form class="filters-part" action="" method="">
+
           <legend class="filters-title">Filtres</legend>
-          <button class="filters-btn" id="economic-btn">
-            <i class="fa-solid fa-money-bill-wave" aria-hidden="true"></i>Économique</button>
-          <button class="filters-btn" id="family-btn">
-            <i class="fa-solid fa-person" aria-hidden="true"></i>Familial</button>
-          <button class="filters-btn" id="romantic-btn">
-            <i class="fa-solid fa-heart" aria-hidden="true"></i>Romantique</button>
-          <button class="filters-btn" id="nuggets-btn">
-            <i class="fa-solid fa-fire" aria-hidden="true"></i>Nos pépites</button>
+          <div class="filters-btns">
+            <!-- div pour les media quieres en dessous de 768px -->
+            <button class="filters-btn" id="economic-btn">
+              <i class="fa-solid fa-money-bill-wave" aria-hidden="true"></i>Économique</button>
+            <button class="filters-btn" id="family-btn">
+              <i class="fa-solid fa-person" aria-hidden="true"></i>Familial</button>
+            <button class="filters-btn" id="romantic-btn">
+              <i class="fa-solid fa-heart" aria-hidden="true"></i>Romantique</button>
+            <button class="filters-btn" id="nuggets-btn">
+              <i class="fa-solid fa-fire" aria-hidden="true"></i>Nos pépites</button>
+          </div>
         </form>
         <div class="info-part">
           <!-- modifier le i -->
@@ -294,30 +298,36 @@
           <a href="#">
             <article class="card">
               <img src="images/activites/reno-laithienne.jpg" alt="Photo du Vieux-Port de Marseille">
-
-              <h3 class="card-title">Vieux-Port</h3>
-
+              <div class="card-txt">
+                <h3 class="card-title">Vieux-Port</h3>
+              </div>
             </article>
           </a>
           <!-- Card 2 -->
           <a href="#">
             <article class="card">
               <img src="images/activites/paul-hermann.jpg" alt="Photo du Fort de Pomègues">
-              <h3 class="card-title">Parc National des Calanques</h3>
+              <div class="card-txt">
+                <h3 class="card-title">Parc National des Calanques</h3>
+              </div>
             </article>
           </a>
           <!-- Card 3 -->
           <a href="#">
             <article class="card">
               <img src="images/activites/kilyan-sockalingum.jpg" alt="Photo du Parc national des Calanques">
-              <h3 class="card-title">Parc National des Calanques</h3>
+              <div class="card-txt">
+                <h3 class="card-title">Parc National des Calanques</h3>
+              </div>
             </article>
           </a>
           <!-- Card 4 -->
           <a href="#">
             <article class="card">
               <img src="images/activites/florian-wehde.jpg" alt="Photo de Notre Dame de la Garde">
-              <h3 class="card-title">Notre-Dame-de-la-Garde</h3>
+              <div class="card-txt">
+                <h3 class="card-title">Notre-Dame-de-la-Garde</h3>
+              </div>
             </article>
           </a>
         </div>
