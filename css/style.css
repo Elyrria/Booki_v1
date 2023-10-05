@@ -294,15 +294,7 @@
        background-color: var(--main-bg-color);
        border-radius: 20px;
        padding: 30px;
-<<<<<<< HEAD
        max-height: 800px;
-=======
-       max-height: 700px;
-   }
-
-   .section-title {
-       font-size: 1.4em;
->>>>>>> c45ef579158a3f28bd974b35f9168cea4566d8e4
    }
 
    /****** Part Hebergements ***********/
@@ -382,17 +374,6 @@
        display: flex;
        flex-direction: column;
        justify-content: space-between;
-<<<<<<< HEAD
-=======
-   }
-
-   .populaires-cards .card-title {
-       margin-bottom: 4px;
-   }
-
-   .populaires-cards .card-rating {
-       margin-bottom: 5px;
->>>>>>> c45ef579158a3f28bd974b35f9168cea4566d8e4
    }
 
    /* Part Marseille Activities */
