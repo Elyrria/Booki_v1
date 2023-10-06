@@ -41,28 +41,32 @@
           <i class=" search-icon fa-solid fa-location-dot" aria-hidden="true"></i>
           <input type="text" id="search-text" name="search-text" placeholder="Marseille, France" autofocus />
           <button id="cta-search"><i class="fa-solid fa-magnifying-glass"></i>
-            <span>Rechercher</span></button>
+            <span class="btn-search">Rechercher</span></button>
           <!-- L'icone "loupe" dans le btn "rechercher" est desactivée -->
         </form>
         <!-- Filtres -->
         <form class="filters-part" action="" method="">
 
           <legend class="filters-title">Filtres</legend>
-          <div class="filters-btns">
-            <!-- div pour les media quieres en dessous de 768px -->
-            <button class="filters-btn" id="economic-btn">
-              <i class="fa-solid fa-money-bill-wave" aria-hidden="true"></i>Économique</button>
-            <button class="filters-btn" id="family-btn">
-              <i class="fa-solid fa-person" aria-hidden="true"></i>Familial</button>
-            <button class="filters-btn" id="romantic-btn">
-              <i class="fa-solid fa-heart" aria-hidden="true"></i>Romantique</button>
-            <button class="filters-btn" id="nuggets-btn">
-              <i class="fa-solid fa-fire" aria-hidden="true"></i>Nos pépites</button>
+          <div class="container-filters-btns">
+            <div class="sub-container-filters-btns">
+              <button class="filters-btn" id="economic-btn">
+                <i class="fa-solid fa-money-bill-wave" aria-hidden="true"></i>Économique</button>
+              <button class="filters-btn" id="family-btn">
+                <i class="fa-solid fa-person" aria-hidden="true"></i>Familial</button>
+            </div>
+            <div class="sub-container-filters-btns">
+              <button class="filters-btn" id="romantic-btn">
+                <i class="fa-solid fa-heart" aria-hidden="true"></i>Romantique</button>
+              <button class="filters-btn" id="nuggets-btn">
+                <i class="fa-solid fa-fire" aria-hidden="true"></i>Nos pépites</button>
+            </div>
           </div>
         </form>
         <div class="info-part">
-          <!-- modifier le i -->
-          <i class="fa-solid fa-info" aria-hidden="true"></i>
+          <div class="info-icon">
+            <i class="fa-solid fa-info" aria-hidden="true"></i>
+          </div>
           <p class="legend-info">Plus de 500 logements sont disponibles dans cette ville</p>
         </div>
       </div>
@@ -78,19 +82,21 @@
               <article class="card">
                 <img src="images/hebergements/fred-kleber.jpg"
                   alt="Image de la chambre d'hôtel montrant deux lits une place">
-                <div class="card-txt">
-                  <!-- Class="card-txt" mise en page CSS -->
-                  <h3 class="card-title">Hôtel du port</h3>
-                  <p class="card-subtitle">Nuit à partir de 52 <span class="euro">€</span></p>
-                </div>
-                <div class="card-rating">
-                  <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                  <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                  <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                  <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                  <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
-                  <span class="sr-only">Note de 4 sur 5</span>
-                  <!-- span = ce contenu n'est visible que par la lecture d'écran -->
+                <div class="card-content">
+                  <div class="card-txt">
+                    <!-- Class="card-txt" mise en page CSS -->
+                    <h3 class="card-title">Hôtel du port</h3>
+                    <p class="card-subtitle">Nuit à partir de 52 <span class="euro">€</span></p>
+                  </div>
+                  <div class="card-rating">
+                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                    <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
+                    <span class="sr-only">Note de 4 sur 5</span>
+                    <!-- span = ce contenu n'est visible que par la lecture d'écran -->
+                  </div>
                 </div>
               </article>
             </a>
@@ -99,20 +105,20 @@
               <article class="card">
                 <img src="images/hebergements/febrian-zakaria.jpg"
                   alt="Image de la chambre d'hôtel montrant deux lits une place">
-
-                <div class="card-txt">
-                  <h3 class="card-title">Hôtel Chez Amina</h3>
-                  <p class="card-subtitle">Nuit à partir de 96 <span class="euro">€</span></p>
+                <div class="card-content">
+                  <div class="card-txt">
+                    <h3 class="card-title">Hôtel Chez Amina</h3>
+                    <p class="card-subtitle">Nuit à partir de 96 <span class="euro">€</span></p>
+                  </div>
+                  <div class="card-rating">
+                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                    <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
+                    <span class="sr-only">Note de 4 sur 5</span>
+                  </div>
                 </div>
-                <div class="card-rating">
-                  <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                  <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                  <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                  <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                  <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
-                  <span class="sr-only">Note de 4 sur 5</span>
-                </div>
-
               </article>
             </a>
             <!-- Card 3 -->
@@ -120,20 +126,20 @@
               <article class="card">
                 <img src="images/hebergements/reisetopia.jpg"
                   alt="Image de la chambre d'hôtel montrant un lit une place">
-
-                <div class="card-txt">
-                  <h3 class="card-title">Hôtel Les mouettes</h3>
-                  <p class="card-subtitle">Nuit à partir de 76 <span class="euro">€</span></p>
+                <div class="card-content">
+                  <div class="card-txt">
+                    <h3 class="card-title">Hôtel Les mouettes</h3>
+                    <p class="card-subtitle">Nuit à partir de 76 <span class="euro">€</span></p>
+                  </div>
+                  <div class="card-rating">
+                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                    <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
+                    <span class="sr-only">Note de 4 sur 5</span>
+                  </div>
                 </div>
-                <div class="card-rating">
-                  <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                  <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                  <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                  <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                  <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
-                  <span class="sr-only">Note de 4 sur 5</span>
-                </div>
-
               </article>
             </a>
           </div>
@@ -144,20 +150,20 @@
               <article class="card">
                 <img src="images/hebergements/annie-spratt.jpg"
                   alt="Image de la chambre d'hôtel montrant un lit deux places">
-
-                <div class="card-txt">
-                  <h3 class="card-title">Hôtel de la mer</h3>
-                  <p class="card-subtitle">Nuit à partir de 46 <span class="euro">€</span></p>
+                <div class="card-content">
+                  <div class="card-txt">
+                    <h3 class="card-title">Hôtel de la mer</h3>
+                    <p class="card-subtitle">Nuit à partir de 46 <span class="euro">€</span></p>
+                  </div>
+                  <div class="card-rating">
+                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                    <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
+                    <span class="sr-only">Note de 4 sur 5</span>
+                  </div>
                 </div>
-                <div class="card-rating">
-                  <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                  <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                  <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                  <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                  <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
-                  <span class="sr-only">Note de 4 sur 5</span>
-                </div>
-
               </article>
             </a>
             <!-- Card 2 -->
@@ -165,20 +171,20 @@
               <article class="card">
                 <img src="images/hebergements/marcus-loke.jpg"
                   alt="Image de la chambre d'auberge de jeunesse montrant un lit superposé">
-
-                <div class="card-txt">
-                  <h3 class="card-title">Auberge La Canebière</h3>
-                  <p class="card-subtitle">Nuit à partir de 25 <span class="euro">€</span></p>
+                <div class="card-content">
+                  <div class="card-txt">
+                    <h3 class="card-title">Auberge La Canebière</h3>
+                    <p class="card-subtitle">Nuit à partir de 25 <span class="euro">€</span></p>
+                  </div>
+                  <div class="card-rating">
+                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                    <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
+                    <span class="sr-only">Note de 4 sur 5</span>
+                  </div>
                 </div>
-                <div class="card-rating">
-                  <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                  <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                  <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                  <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                  <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
-                  <span class="sr-only">Note de 4 sur 5</span>
-                </div>
-
               </article>
             </a>
             <!-- Card 3 -->
@@ -186,20 +192,20 @@
               <article class="card">
                 <img src="images/hebergements/nicate-lee.jpg"
                   alt="Image de la chambre d'auberge de jeunesse montrant deux lits superposés">
-
-                <div class="card-txt">
-                  <h3 class="card-title">Auberge Le Panier</h3>
-                  <p class="card-subtitle">Nuit à partir de 23 <span class="euro">€</span></p>
+                <div class="card-content">
+                  <div class="card-txt">
+                    <h3 class="card-title">Auberge Le Panier</h3>
+                    <p class="card-subtitle">Nuit à partir de 23 <span class="euro">€</span></p>
+                  </div>
+                  <div class="card-rating">
+                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                    <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
+                    <span class="sr-only">Note de 4 sur 5</span>
+                  </div>
                 </div>
-                <div class="card-rating">
-                  <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                  <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                  <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                  <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                  <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
-                  <span class="sr-only">Note de 4 sur 5</span>
-                </div>
-
               </article>
             </a>
           </div>
