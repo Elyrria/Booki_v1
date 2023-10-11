@@ -30,10 +30,6 @@
        font-size: 1.37rem;
    }
 
-   h3 {
-       font-size: 1rem;
-   }
-
    p {
        font-size: 1rem;
    }
@@ -107,10 +103,8 @@
        border-radius: 15px 0 0 15px;
        border: 1px solid var(--main-bg-color);
        background-color: var(--main-bg-color);
-   }
-
-   .search-icon {
        color: black;
+       font-size: 1.1rem;
    }
 
    .search-part input {
@@ -133,7 +127,7 @@
 
    #search-text {
        color: black;
-       font-weight: bold;
+       font-size: 1rem;
    }
 
    #search-text:focus::placeholder {
@@ -150,6 +144,8 @@
        color: white;
        font-weight: bold;
        cursor: pointer;
+       font-size: 1rem;
+       transition: 0.4s;
    }
 
    .fa-magnifying-glass {
@@ -191,11 +187,6 @@
        gap: 10px;
    }
 
-   .sub-container-filters-btns {
-       display: flex;
-       gap: 15px;
-   }
-
    .filters-btn {
        display: flex;
        align-items: center;
@@ -235,7 +226,6 @@
 
    .filters-btn:active {
        opacity: 0.7;
-       box-shadow: none;
    }
 
    /* Part icon + info */
@@ -287,6 +277,7 @@
    }
 
    .card-title {
+       font-size: 1rem;
        margin: 8px 0;
    }
 
