@@ -117,16 +117,16 @@
        text-align: center;
    }
 
+   #search-text {
+       color: black;
+       font-size: 1rem;
+   }
+
    .search-part ::placeholder {
        color: black;
        font-weight: bold;
        /* fixe placeholder opacity for Mozzila */
        opacity: 1;
-   }
-
-   #search-text {
-       color: black;
-       font-size: 1rem;
    }
 
    #search-text:focus::placeholder {
@@ -331,7 +331,7 @@
    }
 
    .hebergements a {
-       width: 30%;
+       width: 29%;
    }
 
    .hebergements-cards .card {
@@ -534,7 +534,6 @@
            display: block;
            padding-bottom: 15px;
            border-bottom: 2px solid white;
-           /* width: 100%; */
        }
 
        nav a:hover {
